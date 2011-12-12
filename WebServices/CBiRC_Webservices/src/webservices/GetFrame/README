@@ -1,0 +1,33 @@
+Installation:
+
+1) getFrameSlots and GetFrame.jar must be accessible through a webserver (such as apache2)
+2) The webserver must support php pages (mod_php)
+3) Users browsing to the getFrameSlots page must have priviledges to run the java call to GetFrame.jar
+4) userWebsiteCustomization.js and userWebsiteCustomization.css must be in the [pathway-tools home]/aic-exports/htdocs folder
+5) template-beginning-body-dynamic.shtml must also be in the [pathway-tools home]/aic-exports/htdocs folder
+
+
+Known Issues:
+1) Pathway Tools runs AllegroServe webserver.  This webserver does not support php, therefore the getFrameSlots.php file must be served by a php-enables server.
+
+2) Firefox does not like the cross-domain javascript call that allows this service to function.  IE does not seem to have a problem with it.  To enable firefox
+support, it might be possible to set up a lisp proxy file that would be served with Pathway Tools in the htdocs folder, and would simply fetch the getFrameSlots.php
+webpage and print it back to the calling javascript.
+
+3)Debugging Hints
+Test java with
+	>java -jar GetFrame.jar host port frame slot
+
+Test php by browsing to getFrameSlots.php with appropriate query values.
+
+Test website by browsing to an object on the pathway tools served webpages.
+
+
+
+Resources:
+1) AllegroServe publish computed pages 
+http://allegroserve.sourceforge.net/aserve-dist/doc/tutorial.html
+http://www.franz.com/support/tutorials/aserve-get-requests-tutorial.htm
+
+2) Lisp proxy
+http://bcmoney-mobiletv.com/blog/2009/05/01/the-server-side-proxy/
