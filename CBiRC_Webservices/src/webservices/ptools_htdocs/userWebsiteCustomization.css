@@ -1,0 +1,87 @@
+/********************* userWebsiteCustomization.css **************************
+
+ This is the user-customizable style-sheet for Pathway Tools.  By default, it
+ is empty.  Sites that run Pathway Tools as a web server and wish to customize
+ the styles should modify this file, not style.css -- any definitions here
+ will override those in style.css.  Keep a copy of your
+ userWebsiteCustomization.css file in another location outside the Pathway
+ Tools root before doing a new Pathway Tools installation.
+                                                                        
+ Simple customization suggestions:
+
+-- To add a logo to the banner:
+   #ptbanner a.logo {
+     background-image: url("/logo.gif");
+     background-repeat: no-repeat;
+   }
+
+-- To change the banner color:
+   #ptbanner { 
+     background-color: #xxxxxx;
+   }
+
+-- To change the toolbar color:
+   div.yuimenubarnav div.bd li.yuimenubaritem, div.bd ul.toolbar {
+     background-color:  #xxxxxx;
+   }
+
+-- To change the color of the box around the Search and Tools pull-down menus:
+   div.bd div.withDatabase, div.yuimenubarnav div.bd li.yuimenubaritem-selected {
+     background-color: #xxxxxx;
+     border-left:  4px solid #yyyyyy;
+   }
+
+   div.bd div.withDatabase {
+     border-right:  3px solid #yyyyyy;
+     border-left:   3px solid #yyyyyy;
+     border-bottom: 3px solid #yyyyyy;
+   }
+
+ Last modification date of this file: $Date: 2009/02/11 19:31:27 $
+
+ *************************************************************************/
+
+#ptbanner a.logo {
+	background-image: url("/cbirc_nameplate.png");
+	background-repeat: no-repeat;
+}
+
+li.yuimenubaritem a.yuimenubaritemlabel {
+ background-color: green;
+}
+
+.yui-skin-sam .yuimenubarnav .yuimenubaritemlabel-hassubmenu {
+   background-color: green;
+}
+
+div.yuimenubarnav {
+  background-color: green;
+}
+
+div.yuimenubarnav div.bd {
+  background-color: green;
+}
+
+div.yuimenubarnav div.bd li.yuimenubaritem {
+  background-color:  green;
+}
+
+/* The style of the selected command in the top menu bar */
+div.yuimenubarnav div.bd li.yuimenubaritem-selected {
+  background-color: #4AA02C;
+}
+
+div.bd > ul {
+  background-color: green;
+}
+
+div.bd > ul > li {
+   background-color: #4AA02C;
+}
+
+div.bd div.withDatabase {
+   background-color: #4AA02C;
+   border-right:  3px solid green;
+   border-left:   3px solid green;
+   border-bottom: 3px solid green;
+}
