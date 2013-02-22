@@ -10,12 +10,12 @@ import java.util.HashMap;
 
 import edu.iastate.javacyco.Frame;
 import edu.iastate.javacyco.JavacycConnection;
-import edu.iastate.javacyco.PtoolsErrorException;
 
 /**
 *
 * @author jrwalsh
 */
+@SuppressWarnings({"rawtypes","unchecked"})
 public class GeneIDTranslate {
 	private static String server = "tht.vrac.iastate.edu";
 	private static int port = 4444;
