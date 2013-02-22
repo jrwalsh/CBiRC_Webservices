@@ -9,7 +9,6 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.*;
 import javax.xml.transform.stream.*;
 
-import edu.iastate.javacyco.Frame;
 import edu.iastate.javacyco.JavacycConnection;
 import edu.iastate.javacyco.PtoolsErrorException;
 
@@ -52,7 +51,7 @@ public class GetFrame {
 	}
 	
 	//TODO
-	@SuppressWarnings({ "unchecked", "static-access" })
+	@SuppressWarnings({ "unchecked", "static-access", "unused", "rawtypes" })
 	private static String convertToXML(JavacycConnection conn, String frameName) throws PtoolsErrorException {
 		String xmlString = "";
 		

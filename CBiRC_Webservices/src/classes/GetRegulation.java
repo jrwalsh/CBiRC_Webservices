@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import edu.iastate.javacyco.Frame;
 import edu.iastate.javacyco.JavacycConnection;
-import edu.iastate.javacyco.PtoolsErrorException;
 
 /**
  *
